@@ -1,0 +1,118 @@
+<nav class="topnavbar d-flex align-items-center justify-content-between">
+    <h4 class="primary mb-0 fs-26 fw-600">{{title}}</h4>
+    <div class="right-admin-profile d-flex align-items-center">
+
+        <div class="d-flex align-items-center">
+            <a href="notification.html" class="mx_20 ms-0"><img
+                    src="assets/images/svg_img/notification.svg"></a>
+
+            <div class="dropdown position-relative">
+                <a class="fs-16 fw-500 black dropdown-toggle d-flex align-items-center" href="#"
+                    role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="true">
+                    <img class="profile_img" src="assets/images/temp_img/top-profile.png">
+                    Rashmi Rajput
+                    <i class="fi fi-sr-angle-small-down lh-0 mt-1 mx-0 ms-1"></i>
+                </a>
+                <ul class="dropdown-menu profiles_dropdown" aria-labelledby="dropdownMenuLink"
+                    data-popper-placement="bottom-end">
+                    <div class="mb-4">
+                        <li class="profile_dropdown fs-16 fw-500 black"><img class="profile_img"
+                                src="assets/images/temp_img/top-profile.png">Rashmi Rajput</li>
+                    </div>
+                    <li class="profile_card fs-15 fw-500 text_small">
+                        <img class="profile_icon" src="assets/images/svg_img/view-profile.svg">
+                        View Profile
+                        <div class="mb-0 lh-0 mx-0 ms-auto p-0"><img src="assets/images/svg_img/arrow.svg">
+                        </div>
+
+                    </li>
+                    <li class="profile_card fs-15 fw-500 text_small" data-bs-target="#exampleModalToggle4"
+                        data-bs-toggle="modal">
+                        <img class="profile_icon" src="assets/images/svg_img/change-password.svg">
+                        Change Password
+                        <div class="mb-0 lh-0 mx-0 ms-auto p-0">
+                            <img src="assets/images/svg_img/arrow.svg">
+                        </div>
+                    </li>
+                    <li class="profile_card fs-15 fw-500 danger bg_danger"
+                        data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">
+                        <img class="profile_icon bg_info" src="assets/images/svg_img/logout.svg">Logout
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- CHANGE PASSWORD MODAL -->
+<div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header p-0 d-block">
+            <div>
+                <div class=" mb-0 d-flex justify-content-between">
+                    <h1 class="fs-22 fw-600 text_small mb-0" id="exampleModalToggleLabel2">Change
+                        password</h1>
+                    <button type="button" class="close_btn" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fi fi-rr-cross-circle"></i></button>
+                </div>
+                <h3 class="fs-16 fw-500 info mb-0">Set a new login password for your account</h3>
+            </div>
+        </div>
+        <div class="modal-body p-0">
+            <div class="mb-4 mt-4">
+                <div class="col-md-12 mb-3">
+                    <div class="position-relative">
+                        <i class="fi fi-rr-lock lock_icon"></i>
+                        <input type="text" class="form-control password_input" placeholder="Current Password">
+                        <i class="fi fi-rr-eye eye_icon"></i>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="position-relative">
+                        <i class="fi fi-rr-lock lock_icon"></i>
+                        <input type="text" class="form-control password_input" placeholder="New Password">
+                        <i class="fi fi-rr-eye eye_icon"></i>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="position-relative">
+                        <i class="fi fi-rr-lock lock_icon"></i>
+                        <input type="text" class="form-control password_input" placeholder="Confirm Password">
+                        <i class="fi fi-rr-eye-crossed eye_icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer p-0">
+            <button class="btn_primary fs-16 fw-500 w-100 m-0">Save Password</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- CHANGE PASSWORD MODAL END -->
+
+<!-- LOGOUT MODAL -->
+<div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+tabindex="-1">
+<div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content">
+        <div class="modal-header p-0 justify-content-center">
+            <div class="mb-4">
+                <h1 class="fs-22 fw-600 text_small mb_10 text-center" id="exampleModalToggleLabel2">Logout
+                    Verification</h1>
+                <h3 class="fs-16 fw-400 info mb-0">Are you sure you want to logout this verification ?</h3>
+            </div>
+        </div>
+
+        <div class="modal-footer p-0 justify-content-center">
+            <div class="gap_20 d-flex">
+                <button class="btn_lg2 fs-16 fw-500" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                <button class="btn_lg fs-16 fw-500">Logout</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- LOGOUT MODAL END -->

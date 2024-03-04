@@ -1,0 +1,24 @@
+ <!-- LOGIN BOX -->
+ <div class="col-md-7 m-auto">
+    <div class="d-flex justify-content-center login_logo">
+        <img src="assets/images/temp_img/login.png" class="img-fluid">
+    </div>
+    <h3 class="dark fs-22 fw-600 mb-2">Welcome to AIG</h3>
+    <h4 class="fs-16 fw-500 info mb_40 login_subtitle">Get access to your password by verifying your identity
+        through otp with the help of your email address</h4>
+    <div class="position-relative mb_30">
+        <i class="fi fi-rr-envelope input_icons"></i>
+        <input type="email" class="form-control profile_input" [(ngModel)]="loginCredential.userId" placeholder="Enter Email">
+    </div>
+    <div class="position-relative mb_12">
+        <i class="fi fi-rr-lock input_icons"></i>
+        <input type="password" class="form-control  profile_input px_41"
+            placeholder="Enter Password"   [(ngModel)]="loginCredential.password" >
+        <i class="fi fi-rr-eye eye_icon2 lh-1"></i>
+    </div>
+    <h4 class="forgot mb_40 right_menu_toggle" data-bs-target="#forgot-password"
+        data-bs-toggle="modal" onclick="btn1_controller()">Forgot
+        password?
+    </h4>
+    <button class="btn btn_primary fs-15 fw-600 w-100 m-0" (click)="adminLogin()" >Log in</button>
+</div>

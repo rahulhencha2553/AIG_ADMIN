@@ -1,0 +1,18 @@
+<div class="d-flex">
+    <!-- SIDEBAR START -->
+    <app-side-bar (setTitleName)="title=$event"></app-side-bar>
+    <!-- SIDEBAR END -->
+    <!-- MIDDLE CONTENT START -->
+    <div class="w-100">
+        <!-- top-navbar -->
+        <app-nav-bar [title]="title"></app-nav-bar> 
+        <!-- top-navbar end -->
+
+
+        <!-- MAIN CONTENT -->
+        <div class="main_content contentSection scroll_bar">
+           <router-outlet></router-outlet>
+        </div>
+    </div>
+    <!-- MIDDLE CONTENT END -->
+</div>

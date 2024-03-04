@@ -1,0 +1,13 @@
+
+
+<nav aria-label="Page navigation example" class="table-pagination" *ngIf="pageManager">
+  <p class="text_dark fs-16 fw-600 mb-0">Showing {{pageManager.pageNumber*pageManager.pageSize+1}} to {{(pageManager.pageNumber*pageManager.pageSize)+pageManager.numberOfElements_currentPage}} of {{pageManager.totalElements}} entries</p>
+  <ul class="pagination mb-0">
+    <li class="p-2  mx-2 ms-0 "><a class="fs-16 fw-500 secondary "  [ngClass]="pageManager.first?'theading disable-click ':' cur-point'"  (click)="manageNext(true)">Previous</a></li>
+
+    <li class="page-item cur-point" *ngFor="let b of pageManager.showButtons ;"  (click)="setPage(b)"><a class="page-link text_orange " [ngClass]="pageRequest.pageNo==b-1?'active':''" id="{{b}}" href="javascript:void(0)">{{b}}</a>
+      </li>
+
+      <li class="p-2  mx-0 ms-2"><a class="fs-16 fw-500 secondary" href="#"  [ngClass]="pageManager.last?'theading disable-click':' cur-point'"   (click)="manageNext(false)">Next</a></li>
+  </ul>
+</nav>

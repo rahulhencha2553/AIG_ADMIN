@@ -1,0 +1,24 @@
+<div class="login">
+    <div class="row">
+        <div class="col-md-6">
+             <!-- LOGIN BOX -->
+            <app-login class="login_img" id="btn1" (isLoggedIn)="setLoggedIn($event)"></app-login>
+
+             <!-- FORGET PASSWORD BOX -->
+            <app-forget-password class="login_img" id="btn2"></app-forget-password>
+
+             <!-- OTP BOX -->
+            <app-otp-verification class="login_img" id="btn3"></app-otp-verification>
+
+            <!-- NEW PASSWORD BOX -->
+            <app-new-password class="login_img" id="btn4"></app-new-password>
+           
+        </div>
+        <!-- RIGHT LOGIN IMAGE -->
+        <div class="col-md-6 m-auto">
+            <div>
+                <img src="assets/images/temp_img/login-img.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
